@@ -25,25 +25,28 @@ public class GameState : MonoBehaviour
     private void Start()
     {
         LoadWeekendEvents();
-        DontDestroyOnLoad(this);
     }
 
     // ReSharper disable once UnusedMember.Local
     private void OnLevelWasLoaded(int level)
     {
-        if (level == 3)
+        const int DoScene = 3;
+
+        if (level == DoScene)
         {
+            var audioSources = GetComponents<AudioSource>();
+
             var oneshot = OneShots.FirstOrDefault(x => x.name == ChosenEvent.OneShot);
-            var ambience = OneShots.FirstOrDefault(x => x.name == ChosenEvent.Ambience);
+            var ambience = Ambience.FirstOrDefault(x => x.name == ChosenEvent.Ambience);
 
             if (oneshot != null)
             {
-                audio.PlayOneShot(oneshot);
+                audioSources[0].PlayOneShot(oneshot);
             }
             if (ambience != null)
             {
-                audio.clip = ambience;
-                audio.Play();
+                audioSources[1].clip = ambience;
+                audioSources[1].Play();
             }
         }
     }
