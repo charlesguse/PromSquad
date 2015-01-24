@@ -30,7 +30,9 @@ public class GameState : MonoBehaviour
     // ReSharper disable once UnusedMember.Local
     private void OnLevelWasLoaded(int level)
     {
-        if (level == 3)
+        const int DoScene = 3;
+
+        if (level == DoScene)
         {
             var audioSources = GetComponents<AudioSource>();
 
