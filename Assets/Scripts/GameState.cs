@@ -4,6 +4,7 @@ using UnityEngine;
 using Assets.Scripts;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
+using System;
 
 // ReSharper disable once CheckNamespace
 public class GameState : MonoBehaviour
@@ -16,14 +17,14 @@ public class GameState : MonoBehaviour
     public static List<WeekendEvent> WeekendEvents { get; set; }
     private static readonly Queue<WeekendEvent> choices = new Queue<WeekendEvent>(4); 
 
-    public int PrepFollowers { get; set; }
-    public int NerdFollowers { get; set; }
-    public int JockFollowers { get; set; }
-    public int EmoFollowers { get; set; }
-    public int DramaFollowers { get; set; }
-    public int BandFollowers { get; set; }
-    public int StonerPreFollowers { get; set; }
-    public int ArtistFollowers { get; set; }
+    public static int PrepFollowers { get; set; }
+    public static int NerdFollowers { get; set; }
+    public static int JockFollowers { get; set; }
+    public static int EmoFollowers { get; set; }
+    public static int DramaFollowers { get; set; }
+    public static int BandFollowers { get; set; }
+    public static int StonerFollowers { get; set; }
+    public static int ArtistFollowers { get; set; }
 
 
     // ReSharper disable once UnusedMember.Local
@@ -37,6 +38,7 @@ public class GameState : MonoBehaviour
     {
         const int ChoiceScene = 2;
         const int DoScene = 3;
+		const int ResultScene = 4;
 
         switch (level)
         {
@@ -94,6 +96,8 @@ public class GameState : MonoBehaviour
         return choices.Dequeue();
     }
 
+
+
     private void LoadWeekendEvents()
     {
         WeekendEvents = new List<WeekendEvent>
@@ -109,7 +113,7 @@ public class GameState : MonoBehaviour
 				EmoFollowersChange = 0,
 				DramaFollowersChange = 0,
 				BandFollowersChange = 0,
-				StonerPreFollowersChange = 0,
+				StonerFollowersChange = 0,
 				ArtistFollowersChange = 0,
                 OneShot = "waterpark-oneshot",
                 Ambience = "waterpark-ambience",
@@ -143,7 +147,7 @@ public class GameState : MonoBehaviour
 				EmoFollowersChange = 0,
 				DramaFollowersChange = 0,
 				BandFollowersChange = 0,
-				StonerPreFollowersChange = 0,
+				StonerFollowersChange = 0,
 				ArtistFollowersChange = 0,
                 //OneShot = "-oneshot",
                 //Ambience = "-ambience",
@@ -154,13 +158,13 @@ public class GameState : MonoBehaviour
 				ChoiceText = "Football Game",
 				EventNarrative = "Went to football game!",
 				ResultNarrative = "Football game results...",
-				PrepFollowersChange = 0,
-				NerdFollowersChange = 0,
+				PrepFollowersChange = 10,
+				NerdFollowersChange = -10,
 				JockFollowersChange = 0,
 				EmoFollowersChange = 0,
 				DramaFollowersChange = 0,
 				BandFollowersChange = 0,
-				StonerPreFollowersChange = 0,
+				StonerFollowersChange = 0,
 				ArtistFollowersChange = 0,
                 OneShot = "football-oneshot",
                 Ambience = "football-ambience",
@@ -171,13 +175,13 @@ public class GameState : MonoBehaviour
 				ChoiceText = "LAN Party",
 				EventNarrative = "Went to LAN party!",
 				ResultNarrative = "LAN party results...",
-				PrepFollowersChange = 0,
+				PrepFollowersChange = 0.5f,
 				NerdFollowersChange = 0,
 				JockFollowersChange = 0,
 				EmoFollowersChange = 0,
 				DramaFollowersChange = 0,
 				BandFollowersChange = 0,
-				StonerPreFollowersChange = 0,
+				StonerFollowersChange = 0,
 				ArtistFollowersChange = 0,
                 //OneShot = "-oneshot",
                 //Ambience = "-ambience",

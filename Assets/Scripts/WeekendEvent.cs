@@ -24,7 +24,7 @@
 		public float EmoFollowersChange { get; set; }
 		public float DramaFollowersChange { get; set; }
 		public float BandFollowersChange { get; set; }
-		public float StonerPreFollowersChange { get; set; }
+		public float StonerFollowersChange { get; set; }
 		public float ArtistFollowersChange { get; set; }
 
         public string OneShot { get; set; }
