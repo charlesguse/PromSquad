@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using UnityEngine;
 using Assets.Scripts;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ public class GameState : MonoBehaviour
 {
     public List<AudioClip> OneShots = new List<AudioClip>();
     public List<AudioClip> Ambience = new List<AudioClip>();
+    public List<Sprite> Backgrounds = new List<Sprite>(); 
 
     public static WeekendEvent ChosenEvent { get; set; }
     public static List<WeekendEvent> WeekendEvents { get; set; }
@@ -35,9 +37,11 @@ public class GameState : MonoBehaviour
         if (level == DoScene)
         {
             var audioSources = GetComponents<AudioSource>();
+            var spriteRenderer = GameObject.Find("Background").GetComponent<SpriteRenderer>();
 
-            var oneshot = OneShots.FirstOrDefault(x => x.name == ChosenEvent.OneShot);
-            var ambience = Ambience.FirstOrDefault(x => x.name == ChosenEvent.Ambience);
+            var oneshot = OneShots.FirstOrDefault(x => String.Equals(x.name, ChosenEvent.OneShot, StringComparison.CurrentCultureIgnoreCase));
+            var ambience = Ambience.FirstOrDefault(x => String.Equals(x.name, ChosenEvent.Ambience, StringComparison.CurrentCultureIgnoreCase));
+            var background = Backgrounds.FirstOrDefault(x => String.Equals(x.name, ChosenEvent.Background, StringComparison.CurrentCultureIgnoreCase));
 
             if (oneshot != null)
             {
@@ -47,6 +51,10 @@ public class GameState : MonoBehaviour
             {
                 audioSources[1].clip = ambience;
                 audioSources[1].Play();
+            }
+            if (background != null)
+            {
+                spriteRenderer.sprite = background;
             }
         }
     }
@@ -98,6 +106,7 @@ public class GameState : MonoBehaviour
 				ArtistFollowersChange = 0,
                 OneShot = "football-oneshot",
                 Ambience = "football-ambience",
+                Background = "football"
 			},
 			new WeekendEvent
 			{

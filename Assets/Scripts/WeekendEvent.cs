@@ -9,6 +9,7 @@
             ResultNarrative = string.Empty;
             OneShot = string.Empty;
             Ambience = string.Empty;
+	        Background = string.Empty;
 	    }
 
 		public bool EventHasBeenChosen = false;
@@ -28,5 +29,6 @@
 
         public string OneShot { get; set; }
         public string Ambience { get; set; }
+        public string Background { get; set; }
 	}
 }
