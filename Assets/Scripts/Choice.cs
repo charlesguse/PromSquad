@@ -1,4 +1,6 @@
-﻿using Assets.Scripts;
+﻿using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
+using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
@@ -8,8 +10,6 @@ namespace Scene
 {
     public class Choice : MonoBehaviour
     {
-		public GameState GameState;
-
 		private Text _choiceText;
 		private WeekendEvent _eventChoice;		
 
@@ -20,15 +20,9 @@ namespace Scene
 			if (_choiceText == null)
 				throw new MissingComponentException("The Choice component needs to have an assoicated Text component on the same class.");
 
-			_eventChoice = ChooseRandomWeekendEvent();
+			_eventChoice = GameState.ChooseRandomWeekendEvent();
 			_choiceText.text = _eventChoice.ChoiceText;
         }
-
-		private WeekendEvent ChooseRandomWeekendEvent()
-		{
-			var availableEvents = GameState.WeekendEvents.Where(x => !x.EventHasBeenChosen).ToList();
-			return availableEvents[Random.Range(0, availableEvents.Count())];
-		}
 
         public void Choose()
         {
