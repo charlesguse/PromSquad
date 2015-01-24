@@ -7,7 +7,7 @@ namespace Assets.Scripts
 {
 	public class WeekendEvent
 	{
-		public bool EventHasBeenChosen { get; set; }
+		public bool EventHasBeenChosen = false;
 
 		public string ChoiceText { get; set; }
 		public string EventNarrative { get; set; }

@@ -21,13 +21,12 @@ namespace Scene
 				throw new MissingComponentException("The Choice component needs to have an assoicated Text component on the same class.");
 
 			_eventChoice = ChooseRandomWeekendEvent();
-			_choiceText = weekendEvent.ChoiceText;
+			_choiceText.text = _eventChoice.ChoiceText;
         }
 
 		private WeekendEvent ChooseRandomWeekendEvent()
 		{
-			var random = new Random();
-			var availableEvents = GameState.WeekendEvents.Where(x => !x.EventHasBeenChosen);
+			var availableEvents = GameState.WeekendEvents.Where(x => !x.EventHasBeenChosen).ToList();
 			return availableEvents[Random.Range(0, availableEvents.Count())];
 		}
 
