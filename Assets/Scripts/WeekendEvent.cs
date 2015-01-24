@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Assets.Scripts
+﻿namespace Assets.Scripts
 {
 	public class WeekendEvent
 	{
+	    public WeekendEvent()
+	    {
+            ChoiceText = string.Empty;
+            EventNarrative = string.Empty;
+            ResultNarrative = string.Empty;
+            OneShot = string.Empty;
+            Ambience = string.Empty;
+	    }
+
 		public bool EventHasBeenChosen = false;
 
 		public string ChoiceText { get; set; }
@@ -21,5 +25,8 @@ namespace Assets.Scripts
 		public float BandFollowersChange { get; set; }
 		public float StonerPreFollowersChange { get; set; }
 		public float ArtistFollowersChange { get; set; }
+
+        public string OneShot { get; set; }
+        public string Ambience { get; set; }
 	}
 }
