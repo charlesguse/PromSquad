@@ -155,8 +155,8 @@ public class GameState : MonoBehaviour
 				BandFollowersChange = SmallIncrease,
 				StonerFollowersChange = SmallIncrease,
 				ArtistFollowersChange = SmallIncrease,
-                OneShot = "waterpark-oneshot",
-                Ambience = "waterpark-ambience",
+                OneShot = "poolparty-oneshot",
+                Ambience = "poolparty-ambience",
                 Background = "pool"
 			},
 			new WeekendEvent
@@ -172,9 +172,9 @@ public class GameState : MonoBehaviour
 				BandFollowersChange = MediumDecrease,
 				StonerFollowersChange = SmallIncrease,
 				ArtistFollowersChange = MediumDecrease,
-                //OneShot = "-oneshot",
-                //Ambience = "-ambience",
-                //Background = ""
+                OneShot = "houseparty-oneshot",
+                Ambience = "houseparty-ambience",
+                //Background = "houseparty"
 			},
             new WeekendEvent
 			{
@@ -224,8 +224,8 @@ public class GameState : MonoBehaviour
 				BandFollowersChange = SmallDecrease,
 				StonerFollowersChange = MediumIncrease,
 				ArtistFollowersChange = SmallDecrease,
-                //OneShot = "-oneshot",
-                //Ambience = "-ambience",
+                OneShot = "lanparty-oneshot",
+                Ambience = "lanparty-ambience",
                 //Background = ""
 			},
             new WeekendEvent
@@ -257,9 +257,9 @@ public class GameState : MonoBehaviour
 				BandFollowersChange = SmallIncrease,
 				StonerFollowersChange = SmallDecrease,
 				ArtistFollowersChange = MediumIncrease,
-                //OneShot = "-oneshot",
-                Ambience = "stayhome-ambience",
-                Background = "Choice"
+                OneShot = "library-oneshot",
+                Ambience = "library-ambience",
+                //Background = "library"
 			},
 		};
     }
