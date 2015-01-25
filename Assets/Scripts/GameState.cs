@@ -204,6 +204,23 @@ public class GameState : MonoBehaviour
                 //Ambience = "-ambience",
                 //Background = ""
 			},
+            new WeekendEvent
+			{
+				ChoiceText = "Stay home",
+				EventNarrative = "You had a quiet night staying in.",
+				ResultNarrative = "Stay home results...",
+				PrepFollowersChange = 0.5f,
+				NerdFollowersChange = 0,
+				JockFollowersChange = 0,
+				EmoFollowersChange = 0,
+				DramaFollowersChange = 0,
+				BandFollowersChange = 0,
+				StonerFollowersChange = 0,
+				ArtistFollowersChange = 0,
+                //OneShot = "-oneshot",
+                Ambience = "stayhome-ambience",
+                Background = "Choice"
+			},
 		};
     }
 }
