@@ -172,10 +172,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4b51f4ea0359660439819c2a3a1cdde1, type: 3}
   - {fileID: 8300000, guid: fc902eb63b281b94c9743f0e06af6cc6, type: 3}
   - {fileID: 8300000, guid: 59b8715c872887b44a2b0d6af8eaac17, type: 3}
+  - {fileID: 8300000, guid: 43a18d9bbf6508a4eafd8551bad3b277, type: 3}
   Backgrounds:
   - {fileID: 21300000, guid: 6a3a91cf97f95824a9bf69f599c4233b, type: 3}
   - {fileID: 21300000, guid: 694726669839b2443907c77a3b3944f0, type: 3}
   - {fileID: 21300000, guid: 7965ee9b285260a4f93adadd23670dbf, type: 3}
+  - {fileID: 21300000, guid: a982c39b9c40cbf429b8e4f90e8abe81, type: 3}
 --- !u!4 &175491088
 Transform:
   m_ObjectHideFlags: 0
@@ -1084,8 +1086,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5093e71f50aa304995eb6a51cc62c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TwoStarFollowerCount: 10
-  ThreeStarFollowerCount: 20
+  TwoStarFollowerCount: 45
+  ThreeStarFollowerCount: 90
 --- !u!114 &2102350059
 MonoBehaviour:
   m_ObjectHideFlags: 0
