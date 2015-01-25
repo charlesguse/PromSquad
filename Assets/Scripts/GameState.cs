@@ -12,13 +12,13 @@ public class GameState : MonoBehaviour
 {
     public List<AudioClip> OneShots = new List<AudioClip>();
     public List<AudioClip> Ambience = new List<AudioClip>();
-    public List<Sprite> Backgrounds = new List<Sprite>(); 
+    public List<Sprite> Backgrounds = new List<Sprite>();
 
     public static WeekendEvent ChosenEvent { get; set; }
     public static List<WeekendEvent> WeekendEvents { get; set; }
-    private static readonly Queue<WeekendEvent> Choices = new Queue<WeekendEvent>(4); 
+    private static readonly Queue<WeekendEvent> Choices = new Queue<WeekendEvent>(4);
 
-	public static int WeekendsLeft = 10;
+    public static int WeekendsLeft = 10;
 
     public static int PrepFollowers { get; set; }
     public static int NerdFollowers { get; set; }
@@ -123,7 +123,6 @@ public class GameState : MonoBehaviour
 			{
 				ChoiceText = "Head on over to the water park.",
 				EventNarrative = "Other than your nerd friend almost drowning, your time at the water park made quite the splash!",
-				ResultNarrative = "Water park results...",
 				PrepFollowersChange = 0,
 				NerdFollowersChange = 0,
 				JockFollowersChange = 0,
@@ -136,11 +135,26 @@ public class GameState : MonoBehaviour
                 Ambience = "waterpark-ambience",
                 Background = "pool"
 			},
+			new WeekendEvent
+			{
+				ChoiceText = "Your friend's parents are going out of town. Time for a house party!",
+				EventNarrative = "Went to house party!",
+				PrepFollowersChange = 0,
+				NerdFollowersChange = 0,
+				JockFollowersChange = 0,
+				EmoFollowersChange = 0,
+				DramaFollowersChange = 0,
+				BandFollowersChange = 0,
+				StonerFollowersChange = 0,
+				ArtistFollowersChange = 0,
+                //OneShot = "-oneshot",
+                //Ambience = "-ambience",
+                //Background = ""
+			},
             new WeekendEvent
 			{
 				ChoiceText = "Plan a picnic",
 				EventNarrative = "You and your friends had quite the enjoyable time at the picnic. Nothing could ruin the glorious day. The sun was shining. The sky was blue. Fun was had.",
-				ResultNarrative = "Picnic results...",
 				PrepFollowersChange = 0,
 				NerdFollowersChange = 0,
 				JockFollowersChange = 0,
@@ -155,26 +169,8 @@ public class GameState : MonoBehaviour
 			},
 			new WeekendEvent
 			{
-				ChoiceText = "Your friend's parents are going out of town. Time for a house party!",
-				EventNarrative = "Went to house party!",
-				ResultNarrative = "House party results...",
-				PrepFollowersChange = 0,
-				NerdFollowersChange = 0,
-				JockFollowersChange = 0,
-				EmoFollowersChange = 0,
-				DramaFollowersChange = 0,
-				BandFollowersChange = 0,
-				StonerFollowersChange = 0,
-				ArtistFollowersChange = 0,
-                //OneShot = "-oneshot",
-                //Ambience = "-ambience",
-                //Background = ""
-			},
-			new WeekendEvent
-			{
 				ChoiceText = "There is a football game this weekend.",
 				EventNarrative = "You watched the game. Hung out with your friends. Made some new ones. What more could you ask for?",
-				ResultNarrative = "Football game results...",
 				PrepFollowersChange = 10,
 				NerdFollowersChange = -10,
 				JockFollowersChange = 0,
@@ -191,7 +187,6 @@ public class GameState : MonoBehaviour
 			{
 				ChoiceText = "LAN Party",
 				EventNarrative = "Went to LAN party!",
-				ResultNarrative = "LAN party results...",
 				PrepFollowersChange = 0.5f,
 				NerdFollowersChange = 0,
 				JockFollowersChange = 0,
@@ -208,7 +203,22 @@ public class GameState : MonoBehaviour
 			{
 				ChoiceText = "Stay home",
 				EventNarrative = "You had a quiet night staying in.",
-				ResultNarrative = "Stay home results...",
+				PrepFollowersChange = 0.5f,
+				NerdFollowersChange = 0,
+				JockFollowersChange = 0,
+				EmoFollowersChange = 0,
+				DramaFollowersChange = 0,
+				BandFollowersChange = 0,
+				StonerFollowersChange = 0,
+				ArtistFollowersChange = 0,
+                //OneShot = "-oneshot",
+                Ambience = "stayhome-ambience",
+                Background = "Choice"
+			},
+            new WeekendEvent
+			{
+				ChoiceText = "Go to the library",
+				EventNarrative = "",
 				PrepFollowersChange = 0.5f,
 				NerdFollowersChange = 0,
 				JockFollowersChange = 0,
