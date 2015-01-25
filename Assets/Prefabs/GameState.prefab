@@ -158,12 +158,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OneShots:
-  - {fileID: 8300000, guid: f2d9023c9837f7d44a2fb2407fab3ba3, type: 3}
-  - {fileID: 8300000, guid: e3ff241f6cdc45040ac144f6b37bd489, type: 3}
+  - {fileID: 8300000, guid: 14b63aab13d800b499dfcb9b241dbaa6, type: 3}
+  - {fileID: 8300000, guid: 533ef8509b798af49b2ccb0bb8d4d5ba, type: 3}
+  - {fileID: 8300000, guid: 1e655602dec2ec74ea015e803dd0a50f, type: 3}
+  - {fileID: 8300000, guid: f63831622819b5044bb709c6b2ac1b7d, type: 3}
   Ambience:
-  - {fileID: 8300000, guid: ff9057ce643deb74395d9b687b175e66, type: 3}
+  - {fileID: 8300000, guid: 4b51f4ea0359660439819c2a3a1cdde1, type: 3}
+  - {fileID: 8300000, guid: fc902eb63b281b94c9743f0e06af6cc6, type: 3}
+  - {fileID: 8300000, guid: 59b8715c872887b44a2b0d6af8eaac17, type: 3}
   Backgrounds:
   - {fileID: 21300000, guid: 6a3a91cf97f95824a9bf69f599c4233b, type: 3}
+  - {fileID: 21300000, guid: 694726669839b2443907c77a3b3944f0, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

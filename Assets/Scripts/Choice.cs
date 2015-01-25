@@ -1,9 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using Assets.Scripts;
+﻿using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
 
 // ReSharper disable once CheckNamespace
 namespace Scene
@@ -16,7 +13,7 @@ namespace Scene
         // ReSharper disable once UnusedMember.Local
         void Start()
         {
-			_choiceText = this.GetComponent<Text>();
+			_choiceText = GetComponent<Text>();
 			if (_choiceText == null)
 				throw new MissingComponentException("The Choice component needs to have an assoicated Text component on the same class.");
 

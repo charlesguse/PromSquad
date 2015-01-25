@@ -1,7 +1,7 @@
-﻿using Scene;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
+// ReSharper disable once CheckNamespace
 public class ChoiceResolution : MonoBehaviour
 {
     private Text _resolution;
