@@ -174,7 +174,7 @@ public class GameState : MonoBehaviour
 				ArtistFollowersChange = MediumDecrease,
                 OneShot = "houseparty-oneshot",
                 Ambience = "houseparty-ambience",
-                //Background = "houseparty"
+                Background = "houseparty"
 			},
             new WeekendEvent
 			{
@@ -226,7 +226,7 @@ public class GameState : MonoBehaviour
 				ArtistFollowersChange = SmallDecrease,
                 OneShot = "lanparty-oneshot",
                 Ambience = "lanparty-ambience",
-                //Background = ""
+                Background = "lanparty"
 			},
             new WeekendEvent
 			{
@@ -259,7 +259,7 @@ public class GameState : MonoBehaviour
 				ArtistFollowersChange = MediumIncrease,
                 OneShot = "library-oneshot",
                 Ambience = "library-ambience",
-                //Background = "library"
+                Background = "library"
 			},
 		};
     }

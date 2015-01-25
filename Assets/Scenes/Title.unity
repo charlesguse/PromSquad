@@ -108,13 +108,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 14b63aab13d800b499dfcb9b241dbaa6, type: 3}
   - {fileID: 8300000, guid: c749649abeee10944920daaac518288c, type: 3}
   - {fileID: 8300000, guid: 1e655602dec2ec74ea015e803dd0a50f, type: 3}
-  - {fileID: 8300000, guid: f63831622819b5044bb709c6b2ac1b7d, type: 3}
-  - {fileID: 8300000, guid: f63831622819b5044bb709c6b2ac1b7d, type: 3}
+  - {fileID: 8300000, guid: 8e2611f666a3b9946823bf45e4d7466b, type: 3}
+  - {fileID: 8300000, guid: 451d603fa229d8b4e97b55312b2f0604, type: 3}
+  - {fileID: 8300000, guid: 9ec27cc570482cb44a40605d6dd44301, type: 3}
   Ambience:
   - {fileID: 8300000, guid: 4b51f4ea0359660439819c2a3a1cdde1, type: 3}
   - {fileID: 8300000, guid: fc902eb63b281b94c9743f0e06af6cc6, type: 3}
-  - {fileID: 8300000, guid: e063cedd02b07b34b81dc93b02649797, type: 3}
-  - {fileID: 8300000, guid: 43a18d9bbf6508a4eafd8551bad3b277, type: 3}
+  - {fileID: 8300000, guid: 8f7ea7ce70b93784e8173aabf0b4706a, type: 3}
+  - {fileID: 8300000, guid: 2a3da8a0799d84a4aa63c60b629d7b71, type: 3}
+  - {fileID: 8300000, guid: fe9e01455aab9e943bd096fdc511a56f, type: 3}
+  - {fileID: 8300000, guid: ca920284774ca3b46a6bec167b196bff, type: 3}
+  - {fileID: 8300000, guid: 4b96b4bea68337c43bbf57bb28ae8385, type: 3}
   Backgrounds:
   - {fileID: 21300000, guid: 6a3a91cf97f95824a9bf69f599c4233b, type: 3}
   - {fileID: 21300000, guid: 694726669839b2443907c77a3b3944f0, type: 3}
@@ -836,10 +840,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11428874, guid: 32dbbbb7491205f48b4b46752452d541, type: 2}
-      propertyPath: OneShots.Array.data[4]
-      value: 
-      objectReference: {fileID: 8300000, guid: f63831622819b5044bb709c6b2ac1b7d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32dbbbb7491205f48b4b46752452d541, type: 2}
   m_RootGameObject: {fileID: 196288331}

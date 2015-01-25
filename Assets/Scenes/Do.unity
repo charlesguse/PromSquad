@@ -1029,17 +1029,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OneShots:
   - {fileID: 8300000, guid: 14b63aab13d800b499dfcb9b241dbaa6, type: 3}
-  - {fileID: 8300000, guid: 533ef8509b798af49b2ccb0bb8d4d5ba, type: 3}
+  - {fileID: 8300000, guid: c749649abeee10944920daaac518288c, type: 3}
   - {fileID: 8300000, guid: 1e655602dec2ec74ea015e803dd0a50f, type: 3}
-  - {fileID: 8300000, guid: f63831622819b5044bb709c6b2ac1b7d, type: 3}
+  - {fileID: 8300000, guid: 8e2611f666a3b9946823bf45e4d7466b, type: 3}
+  - {fileID: 8300000, guid: 451d603fa229d8b4e97b55312b2f0604, type: 3}
+  - {fileID: 8300000, guid: 9ec27cc570482cb44a40605d6dd44301, type: 3}
   Ambience:
   - {fileID: 8300000, guid: 4b51f4ea0359660439819c2a3a1cdde1, type: 3}
   - {fileID: 8300000, guid: fc902eb63b281b94c9743f0e06af6cc6, type: 3}
-  - {fileID: 8300000, guid: 59b8715c872887b44a2b0d6af8eaac17, type: 3}
+  - {fileID: 8300000, guid: 8f7ea7ce70b93784e8173aabf0b4706a, type: 3}
+  - {fileID: 8300000, guid: 2a3da8a0799d84a4aa63c60b629d7b71, type: 3}
+  - {fileID: 8300000, guid: fe9e01455aab9e943bd096fdc511a56f, type: 3}
+  - {fileID: 8300000, guid: ca920284774ca3b46a6bec167b196bff, type: 3}
+  - {fileID: 8300000, guid: 4b96b4bea68337c43bbf57bb28ae8385, type: 3}
   Backgrounds:
   - {fileID: 21300000, guid: 6a3a91cf97f95824a9bf69f599c4233b, type: 3}
   - {fileID: 21300000, guid: 694726669839b2443907c77a3b3944f0, type: 3}
   - {fileID: 21300000, guid: 7965ee9b285260a4f93adadd23670dbf, type: 3}
+  - {fileID: 21300000, guid: a982c39b9c40cbf429b8e4f90e8abe81, type: 3}
+  - {fileID: 21300000, guid: 2453684204187864fbcb164422d890b5, type: 3}
+  - {fileID: 21300000, guid: 01402f8717b5a194ba705a3f70e2e9d8, type: 3}
+  - {fileID: 21300000, guid: d6a057a778e94f248ab051d8abe92337, type: 3}
 --- !u!4 &1823713486
 Transform:
   m_ObjectHideFlags: 0
