@@ -4,7 +4,6 @@ using UnityEngine;
 using Assets.Scripts;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
-using System;
 
 // ReSharper disable once CheckNamespace
 public class GameState : MonoBehaviour
@@ -15,7 +14,7 @@ public class GameState : MonoBehaviour
 
     public static WeekendEvent ChosenEvent { get; set; }
     public static List<WeekendEvent> WeekendEvents { get; set; }
-    private static readonly Queue<WeekendEvent> choices = new Queue<WeekendEvent>(4); 
+    private static readonly Queue<WeekendEvent> Choices = new Queue<WeekendEvent>(4); 
 
     public static int PrepFollowers { get; set; }
     public static int NerdFollowers { get; set; }
@@ -36,17 +35,17 @@ public class GameState : MonoBehaviour
     // ReSharper disable once UnusedMember.Local
     private void OnLevelWasLoaded(int level)
     {
-        const int ChoiceScene = 2;
-        const int DoScene = 3;
-		const int ResultScene = 4;
+        const int choiceScene = 2;
+        const int doScene = 3;
+		const int resultScene = 4;
 
         switch (level)
         {
-            case ChoiceScene:
-                GameState.ChoiceScene();
+            case choiceScene:
+                ChoiceScene();
                 break;
-            case DoScene:
-                this.DoScene();
+            case doScene:
+                DoScene();
                 break;
         }
     }
@@ -57,7 +56,7 @@ public class GameState : MonoBehaviour
 
         foreach (var @event in availableEvents)
         {
-            choices.Enqueue(@event);
+            Choices.Enqueue(@event);
         }
     }
 
@@ -93,7 +92,7 @@ public class GameState : MonoBehaviour
 
     public static WeekendEvent ChooseRandomWeekendEvent()
     {
-        return choices.Dequeue();
+        return Choices.Dequeue();
     }
 
 
@@ -104,8 +103,8 @@ public class GameState : MonoBehaviour
         {
 			new WeekendEvent
 			{
-				ChoiceText = "Water Park",
-				EventNarrative = "Went to water park!",
+				ChoiceText = "Head on over to the water park.",
+				EventNarrative = "Other than your nerd friend almost drowning, your time at the water park made quite the splash!",
 				ResultNarrative = "Water park results...",
 				PrepFollowersChange = 0,
 				NerdFollowersChange = 0,
@@ -121,8 +120,8 @@ public class GameState : MonoBehaviour
 			},
             new WeekendEvent
 			{
-				ChoiceText = "Picnic",
-				EventNarrative = "Had a picnic",
+				ChoiceText = "Plan a picnic",
+				EventNarrative = "You and your friends had quite the enjoyable time at the picnic. Nothing could ruin the glorious day. The sun was shining. The sky was blue. Fun was had.",
 				ResultNarrative = "Picnic results...",
 				PrepFollowersChange = 0,
 				NerdFollowersChange = 0,
@@ -130,15 +129,15 @@ public class GameState : MonoBehaviour
 				EmoFollowersChange = 0,
 				DramaFollowersChange = 0,
 				BandFollowersChange = 0,
-				StonerPreFollowersChange = 0,
+				StonerFollowersChange = 0,
 				ArtistFollowersChange = 0,
                 OneShot = "picnic-dogbark-oneshot",
                 Ambience = "picnic-ambience",
-                Background = ""
+                Background = "picnic"
 			},
 			new WeekendEvent
 			{
-				ChoiceText = "House party",
+				ChoiceText = "Your friend's parents are going out of town. Time for a house party!",
 				EventNarrative = "Went to house party!",
 				ResultNarrative = "House party results...",
 				PrepFollowersChange = 0,
