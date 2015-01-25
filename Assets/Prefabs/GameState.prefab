@@ -169,6 +169,7 @@ MonoBehaviour:
   Backgrounds:
   - {fileID: 21300000, guid: 6a3a91cf97f95824a9bf69f599c4233b, type: 3}
   - {fileID: 21300000, guid: 694726669839b2443907c77a3b3944f0, type: 3}
+  - {fileID: 21300000, guid: 7965ee9b285260a4f93adadd23670dbf, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

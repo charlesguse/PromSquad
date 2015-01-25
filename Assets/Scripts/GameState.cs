@@ -134,7 +134,7 @@ public class GameState : MonoBehaviour
 				ArtistFollowersChange = 0,
                 OneShot = "waterpark-oneshot",
                 Ambience = "waterpark-ambience",
-                Background = ""
+                Background = "pool"
 			},
             new WeekendEvent
 			{
