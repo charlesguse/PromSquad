@@ -248,7 +248,7 @@ public class GameState : MonoBehaviour
 			{
 				ChoiceText = "Go to the library",
 				EventNarrative = "You and your more intellectual friends had a great time learning " +
-				                 "about everything from chivalry to shunga.",
+				                 "about everything from dire wolves to dragons.",
 				PrepFollowersChange = LargeDecrease,
 				NerdFollowersChange = LargeIncrease,
 				JockFollowersChange = LargeDecrease,
