@@ -41,7 +41,6 @@ public class GameState : MonoBehaviour
     {
         const int choiceScene = 2;
         const int doScene = 3;
-		const int resultScene = 4;
 
         switch (level)
         {
