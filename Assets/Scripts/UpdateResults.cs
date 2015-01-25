@@ -60,7 +60,7 @@ public class UpdateResults : MonoBehaviour
         if (followersChange <= 0 || followersChange >= 1)
             change = (int)followersChange;
         else
-            change = -1 * (int)Math.Round(totalFollowers / followersChange);
+			change = -1 * ((int)Math.Round(totalFollowers / followersChange) - totalFollowers);
 
 		var symbol = (change >= 1 || change == 0) ? "+" : "";
         var text = string.Format("{0} ({1}{2})", totalFollowers, symbol, change);
