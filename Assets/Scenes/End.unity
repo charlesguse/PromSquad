@@ -175,6 +175,7 @@ MonoBehaviour:
   Backgrounds:
   - {fileID: 21300000, guid: 6a3a91cf97f95824a9bf69f599c4233b, type: 3}
   - {fileID: 21300000, guid: 694726669839b2443907c77a3b3944f0, type: 3}
+  - {fileID: 21300000, guid: 7965ee9b285260a4f93adadd23670dbf, type: 3}
 --- !u!4 &175491088
 Transform:
   m_ObjectHideFlags: 0
@@ -487,7 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .786764741, g: .786764741, b: .786764741, a: .75686276}
+  m_Color: {r: .477941155, g: .477941155, b: .477941155, a: .827450991}
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1097,7 +1098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
+  m_Color: {r: .99066937, g: 1, b: .323529422, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
