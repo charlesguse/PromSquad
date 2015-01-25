@@ -18,6 +18,8 @@ public class GameState : MonoBehaviour
     public static List<WeekendEvent> WeekendEvents { get; set; }
     private static readonly Queue<WeekendEvent> Choices = new Queue<WeekendEvent>(4); 
 
+	public static int WeekendsLeft = 10;
+
     public static int PrepFollowers { get; set; }
     public static int NerdFollowers { get; set; }
     public static int JockFollowers { get; set; }

@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
+using System.Text;
 using System;
 
 // ReSharper disable once CheckNamespace
@@ -36,6 +38,8 @@ public class UpdateResults : MonoBehaviour
         Drama.text = "Drama: " + BuildResultText(GameState.DramaFollowers, chosenEvent.DramaFollowersChange);
         Band.text = "Band: " + BuildResultText(GameState.BandFollowers, chosenEvent.BandFollowersChange);
         Stoners.text = "Stoners: " + BuildResultText(GameState.StonerFollowers, chosenEvent.StonerFollowersChange);
+
+		GameState.WeekendsLeft--;
     }
 
     private int UpdateFollowerCount(int currentCount, float change)
